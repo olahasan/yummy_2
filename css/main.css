@@ -1,0 +1,245 @@
+/* component */
+.header {
+    background-image: linear-gradient(45deg, yellow, red);
+    font-size: 100px;
+    /* padding: 20px; */
+    color: transparent;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+/* component */
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Qwitcher Grypen', cursive;
+    /* font-family: cursive; */
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* header */
+header {
+    /* background-color: red; */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: green; */
+    position: relative;
+
+}
+
+header .container .left {}
+
+header .container .left .logo1 {}
+
+header .container .left .logo1 a {}
+
+header .container .left .logo1 a img {
+    max-width: 100%;
+    width: 135px;
+    cursor: pointer;
+}
+
+
+header .container .right {}
+
+header .container .right .logo2 {}
+
+header .container .right .logo2 a {}
+
+header .container .right .logo2 a img {
+    max-width: 100%;
+    width: 90px;
+    cursor: pointer;
+}
+
+header .container .right .icons {
+    position: absolute;
+    background-color: #09080894;
+    padding: 15px;
+    right: 45px;
+    width: 160px;
+    top: 59px;
+}
+
+header .container .right .icons .arrow {
+    position: absolute;
+    border: 12px solid;
+    border-color: transparent transparent #09080894 transparent;
+    top: -24px;
+    right: 0px;
+}
+
+header .container .right .icons ul {
+    list-style: none;
+    font-family: cursive;
+
+}
+
+header .container .right .icons ul li {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+header .container .right .icons ul li:not(:last-child) {
+    border-bottom: 1px solid #ffff0042;
+    padding-bottom: 10px;
+
+}
+
+header .container .right .icons ul li:hover {
+    margin-left: 5px;
+
+}
+
+header .container .right .icons ul li a {
+    text-decoration: none;
+    color: #fecc16;
+}
+
+.hide {
+    display: none;
+}
+
+/* header */
+/* Landing */
+.Landing {}
+
+.Landing .image {}
+
+.Landing .image img {
+    max-width: 100%;
+    /* width: 1920px;
+    height: 89vh; */
+}
+
+/* Landing */
+
+/* breakfast */
+.break {}
+
+.break .container {}
+
+.break .container .images {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: start; */
+}
+
+.break .container .images .photos {
+    /* grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+    display: grid; */
+    /* gap: 5px; */
+    /* flex-basis: 68%; */
+    /* flex-basis: 61%; */
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    padding-bottom: 50px;
+
+}
+
+
+.break .container .images .photos img.pic {}
+
+.break .container .images .photos img:first-child {
+    /* grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 5; */
+    /* // */
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+
+.break .container .images .photos img {
+    max-width: 100%;
+    cursor: pointer;
+    /* max-width: 100%;
+    height: 80px;
+    width: 114px;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s; */
+}
+
+.break .container .images .photos img.pic:hover {
+    /* transform: scale(2.8);
+    -webkit-transform: scale(2.8);
+    -moz-transform: scale(2.8);
+    -ms-transform: scale(2.8);
+    -o-transform: scale(2.8); */
+}
+
+.break .container .images .photos #big {
+    max-width: 100%;
+    /* grid-row-start: 1;
+    grid-column-start: 7;
+    grid-row-end: 3;
+    grid-column-end: 5; */
+    /* grid-row-start: 1;
+    grid-column-start: 7;
+    grid-row-end: 4;
+    grid-column-end: 4; */
+    /* max-width: 100%;
+    height: 80px;
+    width: 114px; */
+}
+
+.break .container .images .photo {}
+
+.break .container .images .photo img#pig {
+    max-width: 100%
+}
+
+/* breakfast */
